@@ -1,0 +1,11 @@
+# 本地构建/打包产物（不上传）
+大学生活模拟器-单文件版.html
+大学生活模拟器.zip
+build_single.js
+
+# 本地备忘（不上传）
+images/说明.txt
+
+# 系统杂项
+Thumbs.db
+.DS_Store

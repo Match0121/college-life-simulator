@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大学生活模拟器</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== 界面一：初始（属性分配 + 模式选择） ========== -->
+<section id="screen-start" class="screen active">
+  <div class="card">
+    <div class="logo">🎓</div>
+    <h1>大学生活模拟器</h1>
+    <p class="subtitle">分配五项初始属性，开启你的四年旅程</p>
+
+    <div class="mode-title">选择性别</div>
+    <div class="mode-list" id="gender-list"></div>
+
+    <div class="attr-list" id="attr-list"></div>
+    <div class="points-left">剩余点数：<b id="points-left">10</b></div>
+
+    <div class="mode-title">选择游戏模式</div>
+    <div class="mode-list" id="mode-list"></div>
+
+    <button id="btn-start" class="btn-primary">开始大学生活</button>
+    <p class="hint" id="start-hint"></p>
+  </div>
+</section>
+
+<!-- ========== 界面二：游戏（剧情推进） ========== -->
+<section id="screen-game" class="screen">
+  <div class="progress">矛盾 <span id="scene-index">1</span> / <span id="scene-total">6</span> · <span id="mode-name"></span></div>
+  <div class="attr-bar" id="attr-bar"></div>
+
+  <div class="scene-card">
+    <div class="scene-image" id="scene-image"></div>
+    <h2 id="scene-title"></h2>
+    <p class="scene-text" id="scene-text"></p>
+
+    <div class="options" id="options"></div>
+
+    <div id="branch" class="branch hidden">
+      <div class="branch-image" id="branch-image"></div>
+      <p class="branch-text" id="branch-text"></p>
+      <div class="effect-line" id="effect-line"></div>
+      <button id="btn-next" class="btn-primary">进入下一段剧情</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 界面三：结果（称号结算） ========== -->
+<section id="screen-result" class="screen">
+  <div class="card result-card">
+    <div class="logo">🎓</div>
+    <h1>你的大学生涯报告</h1>
+    <p class="subtitle">四年落幕，五项属性定格</p>
+    <div class="result-list" id="result-list"></div>
+    <div class="result-banner" id="result-banner"></div>
+    <button id="btn-copy" class="btn-secondary">复制结果</button>
+    <button id="btn-restart" class="btn-primary">再来一次</button>
+    <p class="hint" id="copy-hint"></p>
+  </div>
+</section>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
