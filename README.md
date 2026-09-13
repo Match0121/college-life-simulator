@@ -5,7 +5,7 @@
 一款纯前端的大学生活互动剧情游戏：你作为新生走进大学，在六段真实到牙痒的矛盾里做出选择，最终拿到一份属于自己的生涯报告。
 
 ![大学生活开始](preview.jpg)
-
+[demo](demo.MOV)
 ## 在线试玩
 
 **https://match0121.github.io/college-life-simulator/**
